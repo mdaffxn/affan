@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>affan.github.io</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <header class="hero">
+        <h1>🎮 Affan Mini Game Arcade</h1>
+        <p>Click any game card to play instantly.</p>
+      </header>
+
+      <section class="download-box" aria-label="Download website files">
+        <h2>Save website files to your computer</h2>
+        <p>Click these buttons to download the files you need for GitHub upload.</p>
+        <div class="download-actions">
+          <a class="download-btn" href="index.html" download>Download index.html</a>
+          <a class="download-btn" href="styles.css" download>Download styles.css</a>
+          <a class="download-btn" href="script.js" download>Download script.js</a>
+        </div>
+      </section>
+
+      <section class="stats" aria-label="Game statistics">
+        <div class="stat-box">
+          <span>Total Score</span>
+          <strong id="total-score">0</strong>
+        </div>
+        <div class="stat-box">
+          <span>Games Played</span>
+          <strong id="games-played">0</strong>
+        </div>
+      </section>
+
+      <section id="game-grid" class="game-grid" aria-label="Mini games"></section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
