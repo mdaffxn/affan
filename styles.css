@@ -1,0 +1,121 @@
+:root {
+  --bg: #0f1224;
+  --panel: #1a1f3a;
+  --text: #eef1ff;
+  --muted: #b8c0ff;
+  --accent: #58e1ff;
+  --win: #59f18f;
+  --lose: #ff7a8a;
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Inter, system-ui, Arial, sans-serif;
+  background: radial-gradient(circle at top, #1b2050, var(--bg));
+  color: var(--text);
+}
+
+.container {
+  width: min(1100px, 92vw);
+  margin: 2rem auto 3rem;
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: 1.25rem;
+}
+.hero h1 { margin: 0 0 0.4rem; }
+.hero p { margin: 0; color: var(--muted); }
+
+.download-box {
+  background: var(--panel);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 14px;
+  padding: 1rem;
+  margin: 1.2rem auto;
+}
+
+.download-box h2 {
+  margin: 0 0 0.45rem;
+  font-size: 1.1rem;
+}
+
+.download-box p {
+  margin: 0 0 0.8rem;
+  color: var(--muted);
+}
+
+.download-actions {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 0.6rem;
+}
+
+.download-btn {
+  text-decoration: none;
+  text-align: center;
+  border-radius: 10px;
+  background: var(--accent);
+  color: #06202b;
+  font-weight: 700;
+  padding: 0.6rem 0.7rem;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(130px, 220px));
+  gap: 1rem;
+  justify-content: center;
+  margin: 1.5rem 0;
+}
+
+.stat-box {
+  background: var(--panel);
+  border-radius: 14px;
+  padding: 0.85rem 1rem;
+  text-align: center;
+  border: 1px solid rgba(255,255,255,0.08);
+}
+.stat-box span { color: var(--muted); font-size: 0.9rem; }
+.stat-box strong { display: block; font-size: 1.5rem; margin-top: 0.3rem; }
+
+.game-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 0.9rem;
+}
+
+.game-card {
+  background: linear-gradient(180deg, #222a58, var(--panel));
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 14px;
+  padding: 1rem;
+}
+.game-card h3 { margin: 0 0 0.35rem; font-size: 1.02rem; }
+.game-card p {
+  margin: 0 0 0.75rem;
+  font-size: 0.9rem;
+  color: var(--muted);
+  min-height: 2.3rem;
+}
+
+.game-card button {
+  width: 100%;
+  border: 0;
+  border-radius: 10px;
+  background: var(--accent);
+  color: #06202b;
+  font-weight: 700;
+  padding: 0.55rem 0.7rem;
+  cursor: pointer;
+}
+
+.result {
+  margin: 0.7rem 0 0;
+  font-size: 0.88rem;
+  min-height: 1.2rem;
+}
+
+.result.win { color: var(--win); }
+.result.lose { color: var(--lose); }
